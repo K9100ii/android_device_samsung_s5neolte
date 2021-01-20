@@ -1,7 +1,7 @@
 # all unpinned blobs come from SM-G903W stock (nougat)
 
 # Bluetooth
-vendor/firmware/bcm43455_V0147_0248.hcd
+vendor/firmware/bcm43455.hcd
 
 # Camera
 lib/hw/camera.universal7580.so:lib/hw/camera.vendor.universal7580.so
