@@ -4,8 +4,8 @@
 vendor/firmware/bcm43455.hcd
 
 # Camera
-lib/hw/camera.universal7580.so:lib/hw/camera.vendor.universal7580.so
-lib/libexynoscamera.so
+-lib/hw/camera.universal7580.so:lib/hw/camera.vendor.universal7580.so
+-lib/libexynoscamera.so
 vendor/firmware/setfile_3p3.bin
 vendor/firmware/setfile_5e3.bin
 
@@ -46,15 +46,15 @@ app/mcRegistry/07060000000000000000000000000000.tlbin:vendor/app/mcRegistry/0706
 app/mcRegistry/ffffffff00000000000000000000000c.tlbin:vendor/app/mcRegistry/ffffffff00000000000000000000000c.tlbin
 
 # RIL from a3xeltexx (A310FXXU4CSB2)
-lib/libsec-ril.so|aefa7739ab035832ca021498d1f6c745b88cdc6e
-lib/libsec-ril-dsds.so|70676b04cd6c5be9dc0123955a3958882cdc8662
+-lib/libsec-ril.so|aefa7739ab035832ca021498d1f6c745b88cdc6e
+-lib/libsec-ril-dsds.so|70676b04cd6c5be9dc0123955a3958882cdc8662
 
 # Sensors
-lib/hw/sensors.universal7580.so
-lib/libinvensense_hal.so
-lib/libmllite.so
-lib/libmplmpu.so
-lib/libyasalgo.so
+-lib/hw/sensors.universal7580.so
+-lib/libinvensense_hal.so
+-lib/libmllite.so
+-lib/libmplmpu.so
+-lib/libyasalgo.so
 
 # Wifi
 etc/wifi/bcmdhd_apsta.bin:vendor/etc/wifi/bcmdhd_apsta.bin
@@ -72,4 +72,4 @@ etc/sec_s3fwrn7_rfreg.bin
 vendor/firmware/sec_s3fwrn7_firmware.bin
 
 # cbd, from boot.img and pinned to stop removal when extracting from system image
-bin/cbd:vendor/bin/cbd|22a54c7cdd5077e25eefe402ea2bb1cb0074e927
+-bin/cbd:vendor/bin/cbd|22a54c7cdd5077e25eefe402ea2bb1cb0074e927
