@@ -103,23 +103,19 @@ PRODUCT_COPY_FILES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    init.target.rc
+    init.target.rc \
+    init.baseband.rc \
+    init.vendor.rilcommon.rc \
+    init.vendor.rilchip.rc
 
 # Radio
 PRODUCT_PACKAGES += \
+    android.hardware.radio@1.4 \
+    android.hardware.radio.config@1.2 \
+    android.hardware.radio.deprecated@1.0 \
     libprotobuf-cpp-full \
     libsecril-client \
-    modemloader \
-    libxml2 \
-    rild \
-    libril \
-    libreference-ril \
-    libsecril-client-sap \
-    android.hardware.radio@1.1 \
-    android.hardware.radio.deprecated@1.0
-
-PRODUCT_COPY_FILES += \
-    device/samsung/universal7580-common/configs/init/rild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/rild.legacy.rc
+    secril_config_svc
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
