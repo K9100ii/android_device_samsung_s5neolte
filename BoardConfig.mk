@@ -27,13 +27,10 @@ TARGET_OTA_ASSERT_DEVICE := s5neolte,s5neoltexx,s5neolteub,s5neoltevl
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
 
-# Network Routing
-TARGET_NEEDS_NETD_DIRECT_CONNECT_RULE := true
-
 # RIL
-BOARD_MODEM_TYPE := tss310
 BOARD_PROVIDES_LIBRIL := true
-BOARD_NEEDS_ROAMING_PROTOCOL_FIELD := true
+ENABLE_VENDOR_RIL_SERVICE := true
+TARGET_USES_VND_SECRIL := true
 
 # Display
 TARGET_SCREEN_DENSITY := 420
@@ -63,10 +60,6 @@ TARGET_LD_SHIM_LIBS += \
     /system/lib/libcamera_client.so|/vendor/lib/libcamera_client_shim.so \
     /system/lib/libstagefright.so|/system/lib/libstagefright_shim.so \
     /system/lib/libexynoscamera.so|/vendor/lib/libexynoscamera_shim.so
-
-# Legacy BLOB Support
-TARGET_PROCESS_SDK_VERSION_OVERRIDE += \
-    /system/vendor/bin/hw/rild=27
 
 # SELinux
 SELINUX_IGNORE_NEVERALLOWS := true
