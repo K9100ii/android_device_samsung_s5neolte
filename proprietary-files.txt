@@ -1,7 +1,7 @@
 # all unpinned blobs come from SM-G903W stock (nougat)
 
-# Bluetooth
-vendor/firmware/bcm43455.hcd
+# Bluetooth firmware patch file - From J530FXXS8CUE4
+vendor/firmware/bcm43455.hcd|ea26142e632b8f6569fed9ae4aa3dc16491dbda2
 
 # Camera
 -lib/hw/camera.universal7580.so:lib/hw/camera.vendor.universal7580.so
@@ -17,33 +17,33 @@ vendor/firmware/mfc_fw.bin
 vendor/firmware/fimc_is_fd.bin
 vendor/firmware/fimc_is_fw2_3p3.bin
 
-# Mobicore
-app/020a0000000000000000000000000000.drbin:vendor/app/020a0000000000000000000000000000.drbin
-app/FFFFFFFF000000000000000000000001.drbin:vendor/app/FFFFFFFF000000000000000000000001.drbin
-app/mcRegistry/ffffffff000000000000000000000012.tlbin:vendor/app/mcRegistry/ffffffff000000000000000000000012.tlbin
-app/mcRegistry/02010000080300030000000000000000.tlbin:vendor/app/mcRegistry/02010000080300030000000000000000.tlbin
-app/mcRegistry/ffffffff000000000000000000000013.tlbin:vendor/app/mcRegistry/ffffffff000000000000000000000013.tlbin
-app/mcRegistry/fffffffff0000000000000000000001e.tlbin:vendor/app/mcRegistry/fffffffff0000000000000000000001e.tlbin
-app/mcRegistry/ffffffff000000000000000000000004.tlbin:vendor/app/mcRegistry/ffffffff000000000000000000000004.tlbin
-app/mcRegistry/ffffffffd0000000000000000000000a.tlbin:vendor/app/mcRegistry/ffffffffd0000000000000000000000a.tlbin
-app/mcRegistry/08130000000000000000000000000000.tlbin:vendor/app/mcRegistry/08130000000000000000000000000000.tlbin
-app/mcRegistry/ffffffffd00000000000000000000004.tlbin:vendor/app/mcRegistry/ffffffffd00000000000000000000004.tlbin
-app/mcRegistry/ffffffff000000000000000000000019.tlbin:vendor/app/mcRegistry/ffffffff000000000000000000000019.tlbin
-app/mcRegistry/ffffffff000000000000000000000005.tlbin:vendor/app/mcRegistry/ffffffff000000000000000000000005.tlbin
-app/mcRegistry/ffffffffd00000000000000000000017.tlbin:vendor/app/mcRegistry/ffffffffd00000000000000000000017.tlbin
-app/mcRegistry/fffffffff0000000000000000000001b.tlbin:vendor/app/mcRegistry/fffffffff0000000000000000000001b.tlbin
-app/mcRegistry/ffffffff000000000000000000000021.tlbin:vendor/app/mcRegistry/ffffffff000000000000000000000021.tlbin
-app/mcRegistry/ffffffff000000000000000000000017.tlbin:vendor/app/mcRegistry/ffffffff000000000000000000000017.tlbin
-app/mcRegistry/07010000000000000000000000000000.tlbin:vendor/app/mcRegistry/07010000000000000000000000000000.tlbin
-app/mcRegistry/00060308060501020000000000000000.tlbin:vendor/app/mcRegistry/00060308060501020000000000000000.tlbin
-app/mcRegistry/ffffffffd00000000000000000000016.tlbin:vendor/app/mcRegistry/ffffffffd00000000000000000000016.tlbin
-app/mcRegistry/ffffffff000000000000000000000016.tlbin:vendor/app/mcRegistry/ffffffff000000000000000000000016.tlbin
-app/mcRegistry/ffffffff00000000000000000000000a.tlbin:vendor/app/mcRegistry/ffffffff00000000000000000000000a.tlbin
-app/mcRegistry/ffffffff000000000000000000000041.tlbin:vendor/app/mcRegistry/ffffffff000000000000000000000041.tlbin
-app/mcRegistry/ffffffff00000000000000000000000f.tlbin:vendor/app/mcRegistry/ffffffff00000000000000000000000f.tlbin
-app/mcRegistry/ffffffff00000000000000000000000d.tlbin:vendor/app/mcRegistry/ffffffff00000000000000000000000d.tlbin
-app/mcRegistry/07060000000000000000000000000000.tlbin:vendor/app/mcRegistry/07060000000000000000000000000000.tlbin
-app/mcRegistry/ffffffff00000000000000000000000c.tlbin:vendor/app/mcRegistry/ffffffff00000000000000000000000c.tlbin
+# Mobicore - From A510FXXS8CTI8
+vendor/app/020a0000000000000000000000000000.drbin|fdeece1a89a12b5662b9967ac4cf228531eed0f6
+vendor/app/FFFFFFFF000000000000000000000001.drbin|793ccb334d6ded24d0792696ed2969f88771916a
+vendor/app/mcRegistry/ffffffff000000000000000000000012.tlbin|8e3f001c14b6224cda9f6529fc14140560c6e2fc
+vendor/app/mcRegistry/02010000080300030000000000000000.tlbin|9a824c52d794b204883b192e5f9282112c8dba04
+vendor/app/mcRegistry/ffffffff000000000000000000000013.tlbin|725ea6222e775e3281fb7a36aecced928430268a
+vendor/app/mcRegistry/fffffffff0000000000000000000001e.tlbin|3bcf225c1e3e11a3369570384a4d0b48611ede16
+vendor/app/mcRegistry/ffffffff000000000000000000000004.tlbin|cb0d75b42fac6c6856a0fd05a36639965be0a59a
+vendor/app/mcRegistry/ffffffffd0000000000000000000000a.tlbin|1066d15b98f848b7387fa73edbae667a45cd0cf9
+vendor/app/mcRegistry/08130000000000000000000000000000.tlbin|9b1db70dcd39b3876778d1131478e498600f25c0
+vendor/app/mcRegistry/ffffffffd00000000000000000000004.tlbin|2f5d98da3600d7085c03359682714af204f0f455
+vendor/app/mcRegistry/ffffffff000000000000000000000019.tlbin|b74c80380647488a98625c45f1e7f51bfb3ec1af
+vendor/app/mcRegistry/ffffffff000000000000000000000005.tlbin|b2fb742bbabad418d404aadde503d187be2c4eea
+vendor/app/mcRegistry/ffffffffd00000000000000000000017.tlbin|b6e9cb57f21342c78da3c7bb3984e64d44033192
+vendor/app/mcRegistry/fffffffff0000000000000000000001b.tlbin|e4f09ece223309921e0e34323a3cf7c9613c83f9
+vendor/app/mcRegistry/ffffffff000000000000000000000021.tlbin|04ac01eed308c530814d2e38c388ceb4565af591
+vendor/app/mcRegistry/ffffffff000000000000000000000017.tlbin|e6a85dc5ddfbcc3f42202ff4f5e73b86c66d8a5b
+vendor/app/mcRegistry/07010000000000000000000000000000.tlbin|e3906aea09f521c24dcfc81ee2294e317747463a
+vendor/app/mcRegistry/00060308060501020000000000000000.tlbin|748713371474093169553cb769f3ec563d2ad613
+vendor/app/mcRegistry/ffffffffd00000000000000000000016.tlbin|64ad25477b15ab3cd4151cb4711d726235b1ec69
+vendor/app/mcRegistry/ffffffff000000000000000000000016.tlbin|2c1821459cac06dc23e59dbdfd6b8f42aad4031a
+vendor/app/mcRegistry/ffffffff00000000000000000000000a.tlbin|a8d2adfafb82c59765cddf72d1318b15d27891b9
+vendor/app/mcRegistry/ffffffff000000000000000000000041.tlbin|d35ae928b62ddf42b86b9f457fb3a51b7744693c
+vendor/app/mcRegistry/ffffffff00000000000000000000000f.tlbin|9d683fcf355b6877a23bc3c928a9b9aff7dcc3f3
+vendor/app/mcRegistry/ffffffff00000000000000000000000d.tlbin|06e06ff146c34c134bf66e351a42353ab81f2c96
+vendor/app/mcRegistry/07060000000000000000000000000000.tlbin|a846953a98531cf84380a7423b5fd58c18717fe4
+vendor/app/mcRegistry/ffffffff00000000000000000000000c.tlbin|1c882da45add00f9073cfeb75421c75b53e56983
 
 # cbd - From T515XXU8CVL1
 -vendor/bin/cbd|8af499ae8e755143be38aafc6f5fe95fdc2d0eb2
@@ -75,16 +75,20 @@ vendor/etc/plmn_se13.bin|4d6bb7105b5b5645530e4e838071fb8150f45223
 -lib/libmplmpu.so
 -lib/libyasalgo.so
 
-# Wifi
-etc/wifi/bcmdhd_apsta.bin:vendor/etc/wifi/bcmdhd_apsta.bin
-etc/wifi/bcmdhd_apsta.bin_blob:vendor/etc/wifi/bcmdhd_apsta.bin_blob
-etc/wifi/bcmdhd_clm.blob:vendor/etc/wifi/bcmdhd_clm.blob
-etc/wifi/bcmdhd_mfg.bin:vendor/etc/wifi/bcmdhd_mfg.bin
-etc/wifi/bcmdhd_mfg.bin_blob:vendor/etc/wifi/bcmdhd_mfg.bin_blob
-etc/wifi/bcmdhd_sta.bin:vendor/etc/wifi/bcmdhd_sta.bin
-etc/wifi/bcmdhd_sta.bin_blob:vendor/etc/wifi/bcmdhd_sta.bin_blob
-etc/wifi/nvram_mfg.txt:vendor/etc/wifi/nvram_mfg.txt
-etc/wifi/nvram_net.txt:vendor/etc/wifi/nvram_net.txt
+# WiFi firmware - nvram_mfg.txt and nvram_net.txt from G903WVLU1CQI1, rest from J530FXXS8CUE4
+# Only meaningful modifications: Changed ccode to GB and regrev to 6 in nvram_net.txt to enable
+# support for more WiFi channels:
+#  $ sed -i "s|ccode=Q2|ccode=GB|" vendor/etc/wifi/nvram_net.txt
+#  $ sed -i "s|regrev=993|regrev=6|" vendor/etc/wifi/nvram_net.txt
+vendor/etc/wifi/bcmdhd_apsta.bin|00bab4887ccbad18d69cff1787afacc6455e7a84
+vendor/etc/wifi/bcmdhd_apsta.bin_blob|7658326e5f757852714aea6c95dbecc31dec2c5d
+vendor/etc/wifi/bcmdhd_clm.blob|ec2c9f154c2b5ed67b0838dae7422a769f60ec23
+vendor/etc/wifi/bcmdhd_mfg.bin|f72f38114ee8744779bd540be001f5b8fb4e8de0
+vendor/etc/wifi/bcmdhd_mfg.bin_blob|e1bd4dec9fe6692da27a614e8a6bef71ee2555cc
+vendor/etc/wifi/bcmdhd_sta.bin|1920f4d56e3a49367d45b2892ad32bede5ab9fb2
+vendor/etc/wifi/bcmdhd_sta.bin_blob|e7ba4ab9e1a87b3e947c56f87f89d2bed78c017b
+vendor/etc/wifi/nvram_mfg.txt|0c4c96e51a8cd1a71888507ed9fdc900a9338b85
+vendor/etc/wifi/nvram_net.txt|4af4ea3807adc9920098b041802264a7031b70b7
 
 # NFC
 etc/sec_s3fwrn7_rfreg.bin
