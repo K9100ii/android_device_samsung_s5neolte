@@ -114,8 +114,7 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.2 \
     android.hardware.radio.deprecated@1.0 \
     libprotobuf-cpp-full \
-    libsecril-client \
-    secril_config_svc
+    libsecril-client
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay

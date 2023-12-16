@@ -76,9 +76,6 @@ on property:ril.clatd.v4-rmnet7=up
     write /sys/class/net/v4-rmnet7/queues/rx-0/rps_cpus 2
 
 # SS/DS configuration
-on property:ro.vendor.multisim.simslotcount=*
-   write /sys/module/modem_ctrl_ss310ap/parameters/ds_detect ${ro.vendor.multisim.simslotcount}
-
 on property:ro.vendor.multisim.simslotcount=1
     setprop persist.radio.multisim.config ss
 

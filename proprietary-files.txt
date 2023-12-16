@@ -45,23 +45,25 @@ vendor/app/mcRegistry/ffffffff00000000000000000000000d.tlbin|06e06ff146c34c134bf
 vendor/app/mcRegistry/07060000000000000000000000000000.tlbin|a846953a98531cf84380a7423b5fd58c18717fe4
 vendor/app/mcRegistry/ffffffff00000000000000000000000c.tlbin|1c882da45add00f9073cfeb75421c75b53e56983
 
-# cbd - From T515XXU8CVL1
+# cpboot-daemon - From A105FNXXS9CWB1
 -vendor/bin/cbd|8af499ae8e755143be38aafc6f5fe95fdc2d0eb2
 
-# RIL - From T515XXU8CVL1
-# Only modification made: libsec-ril.so has been patched to load libprotobuf-cpp-full.so instead
-# of libprotobuf-cpp-full-3.9.1.so:
-#  $ ../../../../prebuilts/extract-tools/linux-x86/bin/patchelf-0_9 --replace-needed libprotobuf-cpp-full-3.9.1.so libprotobuf-cpp-full.so vendor/lib64/libsec-ril.so
+# RIL - From A105FNXXS9CWB1
+# Only modification made: libsec-ril.so and libsec-ril-dsds.so have been patched to
+# load libprotobuf-cpp-full.so instead of libprotobuf-cpp-full-3.9.1.so:
+#  $ ../../../../prebuilts/extract-tools/linux-x86/bin/patchelf-0_9 --replace-needed libprotobuf-cpp-full-3.9.1.so libprotobuf-cpp-full.so vendor/lib/libsec-ril.so
+#  $ ../../../../prebuilts/extract-tools/linux-x86/bin/patchelf-0_9 --replace-needed libprotobuf-cpp-full-3.9.1.so libprotobuf-cpp-full.so vendor/lib/libsec-ril-dsds.so
 -vendor/bin/hw/rild|b964642e593fa2a451f7bdb270d12b4622aca9ed
 vendor/etc/plmn_delta.bin|6a826cb6a8a1d460403ab2ebccf4f0d7be546ce6
 vendor/etc/plmn_delta_attaio.bin|751a1c7105f1c03fc196689c2a71e2c69aa14e1f
 vendor/etc/plmn_delta_hktw.bin|97a5a4747e8c32d463d8f26254257309b8a03a63
 vendor/etc/plmn_delta_usagsm.bin|9a25ec9e9da16ed2f8a9db07f037fe08283b24e5
-vendor/etc/plmn_se13.bin|4d6bb7105b5b5645530e4e838071fb8150f45223
--vendor/lib/libengmode_client.so|1cd423b1609f12d27a4121a9d831fa2e078cbaf4
--vendor/lib/libvkmanager_vendor.so|b343140a3bdb8ec5d7ce2306640f179690478181
+vendor/etc/plmn_se13.bin|ca726d522e75b6ef9f65734a8ed087ab749ca6a9
+-vendor/lib/libengmode_client.so|1b301bba9ec88c017687aa0db745949a23c0de5f
+-vendor/lib/libvkmanager_vendor.so|c964cdec2e80fb733f510dc3dab07dfdc032e2b4
 -vendor/lib/libril.so|d60c374b2fae7302d5e2ea469d01ff100bb7dd0a
--vendor/lib/libsec-ril.so|6a7b633bd38a0be01d9bfa9a579aa7255d747900
+-vendor/lib/libsec-ril.so|daa0b2be1bca5b7d2f8ca76c8cfd5cbef6126c91
+-vendor/lib/libsec-ril-dsds.so|e6c425ab8df6328d7adfc68c03b70e2f7cf62643
 -vendor/lib/libsemnativecarrierfeature.so|ac27187c27eba2b96eaa4812b8e9b60193ca18d6
 -vendor/lib/vendor.samsung.hardware.radio@2.0.so|1c976df4082e7829578a9cb48c040706e1753a6d
 -vendor/lib/vendor.samsung.hardware.radio@2.1.so|6ce633e09b82f54aabd789ca23a5f1833a232f68
