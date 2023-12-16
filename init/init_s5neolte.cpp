@@ -45,7 +45,7 @@ using android::base::ReadFileToString;
 using android::base::Trim;
 
 void property_override(char const prop[], char const value[])
-{	
+{
 	prop_info *pi;
 
 	pi = (prop_info*) __system_property_find(prop);
@@ -60,6 +60,20 @@ void property_override_dual(char const system_prop[],
 {
 	property_override(system_prop, value);
 	property_override(vendor_prop, value);
+}
+
+void set_sim_info()
+{
+	const char *simslot_count_path = "/proc/simslot_count";
+	std::string simslot_count;
+
+	if (ReadFileToString(simslot_count_path, &simslot_count)) {
+		simslot_count = Trim(simslot_count); // strip newline
+		property_override("ro.vendor.multisim.simslotcount", simslot_count.c_str());
+	}
+	else {
+		LOG(ERROR) << "Could not open '" << simslot_count_path << "'\n";
+	}
 }
 
 void vendor_load_properties()
@@ -94,6 +108,8 @@ void vendor_load_properties()
 		property_override_dual("ro.product.device", "ro.vendor.product.device", "s5neoltecan");
 		property_override("ro.product.name", "s5neoltevl");
 	}
+
+	set_sim_info();
 
 	device = GetProperty("ro.product.device", "");
 	LOG(ERROR) << "Found bootloader id '" << bootloader.c_str() << "' setting build properties for '" << device.c_str() << "' device\n";
