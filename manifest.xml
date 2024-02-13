@@ -130,7 +130,9 @@
         <name>android.hardware.radio</name>
         <transport>hwbinder</transport>
         <fqname>@1.2::ISap/slot1</fqname>
+        <fqname>@1.2::ISap/slot2</fqname>
         <fqname>@1.4::IRadio/slot1</fqname>
+        <fqname>@1.4::IRadio/slot2</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.radio.config</name>
@@ -200,6 +202,7 @@
         <interface>
             <name>ISehRadio</name>
             <instance>slot1</instance>
+            <instance>slot2</instance>
         </interface>
     </hal>
     <hal format="hidl">
@@ -209,6 +212,7 @@
          <interface>
             <name>ISehBridge</name>
             <instance>slot1</instance>
+            <instance>slot2</instance>
         </interface>
     </hal>
     <hal format="hidl">
@@ -218,7 +222,9 @@
         <interface>
             <name>ISehChannel</name>
             <instance>epdgd</instance>
+            <instance>epdgd2</instance>
             <instance>imsd</instance>
+            <instance>imsd2</instance>
         </interface>
     </hal>
 </manifest>
